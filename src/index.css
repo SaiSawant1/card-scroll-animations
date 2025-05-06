@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+:root,
+html,
+main {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.gradient {
+  background: #EEAECA;
+  background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
+
+.hero-gradient {
+  background: #c27e9a;
+  background: radial-gradient(circle, rgba(194, 126, 154, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}
