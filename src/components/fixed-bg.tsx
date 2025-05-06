@@ -31,14 +31,10 @@ export const FixedBg = () => {
         trigger: "#review-section",
         start: "top 0",
         scrub: true,
-        markers: true,
-        pin: true
+        pin: true,
       },
     });
   }, []);
-
-
-
 
   return (
     <div className="absolute inset-0 z-[100] p-15 gradient">
@@ -48,34 +44,39 @@ export const FixedBg = () => {
         </p>
         <div className="flex flex-col gap-5 py-10 px-20 ">
           <p className="text-3xl">
-            When working with us, you get the value of working with founders. Building strong relationships with out client is at the heart of our approach.
+            When working with us, you get the value of working with founders.
+            Building strong relationships with out client is at the heart of our
+            approach.
           </p>
           <p className="text-3xl">
-            we take the time to understand your unique needs and create tailorder design solutions to help you make an impact.
+            we take the time to understand your unique needs and create
+            tailorder design solutions to help you make an impact.
           </p>
         </div>
         {[1, 2, 3, 4, 5].map((i) => <Card key={i} />)}
       </div>
     </div>
-  )
-
-}
-
+  );
+};
 
 export const Card = () => {
-
   return (
-    <div className="animate-card bg-white/0 absolute z-[10] bg-opacity-20 p-4 rounded-md shadow-xl border-6 border-white/30 min-h-fit max-w-72"
+    <div
+      className="animate-card bg-white/0 absolute z-[10] bg-opacity-20 p-4 rounded-md shadow-xl border-6 border-white/30 min-h-fit max-w-72"
       style={{
-        backdropFilter: 'blur(5px)',
-        WebkitBackdropFilter: 'blur(5px)'
+        backdropFilter: "blur(5px)",
+        WebkitBackdropFilter: "blur(5px)",
       }}
     >
-      <div className="text-xl font-bold text-black mb-2">TechNova Solutions</div>
+      <div className="text-xl font-bold text-black mb-2">
+        TechNova Solutions
+      </div>
       <div className="text-black mb-4">
-        A forward-thinking company with a strong culture of innovation. Team collaboration was smooth and leadership was transparent with goals and expectations. Great place for early-career growth.
+        A forward-thinking company with a strong culture of innovation. Team
+        collaboration was smooth and leadership was transparent with goals and
+        expectations. Great place for early-career growth.
       </div>
       <div className="text-sm text-black">Reviewed by: Aisha Patel, CTO</div>
     </div>
-  )
-}
+  );
+};
